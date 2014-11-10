@@ -1,0 +1,183 @@
+body {
+	background-color: #70594F;
+	font-family: Verdana;
+}
+
+#lewy {
+	width: 80%;
+	height:250px;
+	position relative;
+	float:left;
+	background-image: url("obrazki/Turquoise.jpg");
+	margin-right: 1%;
+}
+
+#prawy {
+	width: 19%;
+	height: 250px;
+	position relative;
+	float:left;
+}
+
+
+#obraz {
+	height: 100%;
+	width: 100%;
+}
+
+#tekst {
+	position: relative;
+	left: 40%;
+	top: 30%;
+	font-size:25px;
+	font-family: Century, Tahoma;
+	font-weight: bold;
+	color: #70594F;
+}
+
+#pasek {
+	position:relative;
+}
+
+.przycisk {
+	position: relative;
+	float:left;
+	width:23%;
+	height:80px;
+	background-color: #68AADE;
+	margin: 20px 1% 20px 1%;
+}
+
+.ptekst {
+	position: relative;
+	float: left;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	top: 20px;
+	left: 20px;
+	color: black;
+}
+
+.ptekst:hover {
+	color:#C1E3E3;
+}
+
+.pikona{
+	position: relative;
+	float: right;
+	top: 8px;
+	right: 20px;
+}
+
+.tresc {
+	background-color: #FFFFD5;
+	height: 500px;
+	position:relative;
+	float:left;
+	margin-bottom: 20px;
+	padding:30px;
+	width:95%;
+}
+
+h2 {
+	font-weight: bold;
+	color: #AEE758;
+	border-bottom: solid 2px;
+}
+
+.txt {
+	width:65%; 
+	float:right;
+	font-size: 14px;
+}
+
+.owt{
+	width:35%;
+	height: 450px;	
+
+}
+
+.like{
+	height: 20px;
+	width: 20px;
+}
+
+td img {
+	height: 200px;
+	width: 200px;
+}
+
+
+table {
+	position:relative;
+	left:10px;
+}
+
+#stopka {
+	background-color:#68AADE;
+	height: 170px;
+}
+
+#rys {
+	width: 280px;
+	height: 150px;
+	float: right;
+}
+
+
+#serce {
+	height:20px;
+	width: 25px;
+}
+
+#koniec {
+	text-align:center;
+	position:relative;
+	width:100%;
+	bottom: -60px;
+}
+
+span {
+	font-weight: bold;
+	font-style: italic;
+}
+
+#wiadomosc {
+	height: 200px;
+	width:30%;
+	position: relative;
+	float:left;
+	border-radius: 10px;
+	background-color:#FFFFD5;
+	margin-bottom: 20px; 
+	padding: 40px;
+	border: solid 2px #68AADE;
+	
+}
+
+.kol {
+	position: relative;
+	float: left;
+	width: 50%;
+}
+
+.kol div {
+	margin-bottom:20px;
+}
+
+#timie{
+}
+
+#iwiadomosc{height: 50px;}
+
+#zegar {
+	margin: 20px;
+}
+
+#bloczek{
+	position:relative;
+	background-color:red;
+	height: 150px;
+	width: 100px;
+}
