@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-<html>
-	
-	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-		<script type = "text/jscript" src="skrypt.js"></script>
-		<title>"Ćwiczenie nr 1"</title>
-	</head>
-	
-	<body onload="odliczanie();">
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Ćwiczenie2</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+  <body>
+
 		<div>
 			<div id = "lewy">
 				<div id="zegar"></div>
@@ -21,20 +19,20 @@
 
 	
 		<div id = "pasek">
-			<div class = "przycisk">
+			<div class = "przycisk" id="p1">
 				<div><a class = "ptekst" href = "http://www.up.wroc.pl/">Hic ambiguo</a></div>
 				<div><img class = "pikona" src = "obrazki/house28.png"></div>
 			</div>
-			<div class = "przycisk">
+			<div class = "przycisk" id = "p2">
 				<div><a class = "ptekst" href = "http://www.up.wroc.pl/">Hic ambiguo</a></div>
 				<div><img class = "pikona" src = "obrazki/information3.png"></div>
 			</div>
-						<div class = "przycisk">
+						<div class = "przycisk" id="p3">
 				<div><a class = "ptekst" href = "http://www.up.wroc.pl/">Hic ambiguo</a></div>
 				<div><img class = "pikona" src = "obrazki/male11.png"></div>
 			</div>
-						<div class = "przycisk">
-				<div><a class = "ptekst" onclick="wstawiaj()">Hic ambiguo</a></div>
+						<div class = "przycisk" id="p4">
+				<div><a class = "ptekst">WYŚLIJ E-MAIL !</a></div>
 				<div><img class = "pikona"src = "obrazki/messages4.png"></div>
 			</div>
 		</div>
@@ -51,15 +49,16 @@
 				<div><input id = "inazwisko" type="text"></div>
 				<div><input id ="iemail" type= "email"></div>
 				<div><input id = "iwiadomosc" type="text"></div>
-				<div id="bwyslij"><input type="button" value="Wyślij" onclick="wyslij()"/></div>
+				<div id="bwyslij"><input type="button" value="Wyślij"/></div>
+				<div id="banuluj"><input type="button" value="Anuluj" /></div>
 			</div>
 		</div>
 		
 		<div class = "tresc">
 			<div class = "txt">
 				<h2> Nam non nisl sit amet</h2>
-				<p> Lorem ipsum ac tempor nibh. Ut turpis. Nam non <span>nisl sit amet</span>, consectetuer condimentum dignissim. Aliquam vel nulla. Phasellus blandit, lectus ut venenatis augue egestas accumsan. In metus eros cursus lectus felis, eleifend <span>condimentum dignissim</span>c. Sed tristique id, turpis. Lorem ipsum ac tempor nibh. Ut turpis. Duis non lacus.Lorem ipsum dolor sit amet augue commodo turpis metus hendrerit risus. Nam non <span>nisl sit amet</span>, consectetuer condimentum dignissim. Aliquam vel nulla. Phasellus blandit, lectus ut venenatis augue egestas accumsan. In metus eros cursus lectus felis, eleifend <span>condimentum dignissim</span>c. Sed tristique id, turpis. Lorem ipsum ac tempor nibh. Ut turpis. Duis non lacus.Lorem ipsum dolor sit amet augue commodo turpis metus hendrerit risus. Nam non <span>nisl sit amet</span>, consectetuer condimentum dignissim. Aliquam vel nulla. Phasellus blandit, lectus ut venenatis augue egestas accumsan. In metus eros cursus lectus felis, eleifend <span>condimentum dignissim</span>c. Sed tristique id, turpis. Lorem ipsum ac tempor nibh. Ut turpis. Duis non lacus.Phasellus pulvinar ligula, nonummy nunc faucibus massa sit amet mi metus, vulputate vitae, egestas risus velit, condimentum ante ipsum cursus quis, orci. Nunc justo. Aliquam eros. Sed congue, sem dolor gravida gravida massa sit amet, libero. Cras orci. Proin volutpat a, fermentum eu, faucibus ligula, semper eu, leo. Phasellus quis tortor. Nam non adipiscing aliquet malesuada, diam vitae risus ante id mi. Pellentesque sed tortor. Nullam dui convallis auctor. Maecenas semper tellus. Praesent vitae arcu dolor, luctus bibendum. Nulla mollis luctus. Sed in neque magna porttitor odio. In mollis, metus. Nam hendrerit. Maecenas nec cursus lectus felis, ullamcorper libero quis orci luctus scelerisque. Duis luctus et felis. Nam interdum consectetuer ut, pellentesque auctor metus. Nam non nisl sit amet, consectetuer condimentum dignissim. Aliquam vel nulla. Phasellus blandit, lectus ut venenatis augue egestas accumsan. In metus eros cursus lectus felis, eleifend posuere consectetuer.Donec mauris ac.</p>
-				<a href = "http://www.facebook.com"><img class = "like"src ="http://upload.wikimedia.org/wikipedia/commons/1/13/Facebook_like_thumb.png"/></a>
+				<p> Aliquam vel nulla. Phasellus blandit, lectus ut venenatis augue egestas accumsan. In metus eros cursus lectus felis, eleifend <span>condimentum dignissim</span>c. Sed tristique id, turpis. Lorem ipsum ac tempor nibh. Ut turpis. Duis non lacus.Lorem ipsum dolor sit amet augue commodo turpis metus hendrerit risus. Nam non <span>nisl sit amet</span>, consectetuer condimentum dignissim. Aliquam vel nulla. Phasellus blandit, lectus ut venenatis augue egestas accumsan. In metus eros cursus lectus felis, eleifend <span>condimentum dignissim</span>c. Sed tristique id, turpis. Lorem ipsum ac tempor nibh. Ut turpis. Duis non lacus.Phasellus pulvinar ligula, nonummy nunc faucibus massa sit amet mi metus, vulputate vitae, egestas risus velit, condimentum ante ipsum cursus quis, orci. Nunc justo. Aliquam eros. Sed congue, sem dolor gravida gravida massa sit amet, libero. Cras orci. Proin volutpat a, fermentum eu, faucibus ligula, semper eu, leo. Phasellus quis tortor. Nam non adipiscing aliquet malesuada, diam vitae risus ante id mi. Pellentesque sed tortor. Nullam dui convallis auctor. Maecenas semper tellus. Praesent vitae arcu dolor, luctus bibendum. Nulla mollis luctus. Sed in neque magna porttitor odio. In mollis, metus. Nam hendrerit. Maecenas nec cursus lectus felis, ullamcorper libero quis orci luctus scelerisque. Duis luctus et felis. Nam interdum consectetuer ut, pellentesque auctor metus. Nam non nisl sit amet, consectetuer condimentum dignissim. Aliquam vel nulla. Phasellus blandit, lectus ut venenatis augue egestas accumsan. In metus eros cursus lectus felis, eleifend posuere consectetuer.Donec mauris ac.</p>
+				<a><img class = "like"src ="http://upload.wikimedia.org/wikipedia/commons/1/13/Facebook_like_thumb.png"/></a>
 			</div>
 			<div>
 				<img class = "owt" src = "http://swiat-naklejek.pl/1147-3671-thickbox/naklejka-welurowa-hipopotam-d6w.jpg" />
@@ -71,7 +70,7 @@
 			<div class = "txt">
 				<h2>Aliquam vel nulla</h2>
 				<p>In metus eros cursus lectus felis, eleifend posuere consectetuer.In metus eros cursus lectus felis, eleifend posuere consectetuer. Lorem ipsum ac tempor nibh. Ut turpis. Duis non lacus. Phasellus pulvinar ligula, nonummy nunc faucibus massa sit amet mi metus, vulputate vitae, egestas risus velit, condimentum ante ipsum cursus quis, orci. Nunc justo. Aliquam eros. Sed congue, sem dolor gravida gravida massa sit amet, libero. Aliquam faucibus orci dictum aliquet lorem. Morbi placerat ornare sollicitudin. Cras orci. Proin volutpat a, fermentum eu, faucibus ligula, semper eu, leo. Phasellus quis tortor. Nam non adipiscing aliquet malesuada, diam vitae risus ante id mi. Pellentesque sed tortor. Nullam dui convallis auctor. Maecenas semper tellus. Praesent vitae arcu dolor, luctus bibendum. Nulla mollis luctus. Sed in neque magna porttitor odio. In mollis, metus. Nam hendrerit. Maecenas nec cursus lectus felis, ullamcorper libero quis orci luctus scelerisque. Duis luctus et felis. Nam interdum consectetuer ut, pellentesque auctor metus. Lorem ipsum dolor sit amet augue commodo turpis metus hendrerit risus. Nam non <span>nisl sit amet</span>, consectetuer condimentum dignissim. Aliquam vel nulla. Phasellus blandit, lectus ut venenatis augue egestas accumsan. In metus eros cursus lectus felis, eleifend <span>condimentum dignissim</span>c. Duis non lacus.Lorem ipsum dolor sit amet augue commodo turpis metus hendrerit risus. Nam non <span>nisl sit amet</span>, consectetuer condimentum dignissim. Aliquam vel nulla. Phasellus blandit, lectus ut venenatis augue egestas accumsan. In metus eros cursus lectus felis, eleifend <span>condimentum dignissim</span>c. Sed tristique id, turpis. Lorem ipsum ac tempor nibh. Ut turpis. Duis non lacus.Lorem ipsum dolor sit amet augue commodo turpis metus hendrerit risus. Nam non <span>nisl sit amet</span>, consectetuer condimentum dignissim. Aliquam vel nulla. Phasellus blandit, lectus ut venenatis augue egestas accumsan. In metus eros cursus lectus felis, eleifend <span>condimentum dignissim</span>c. Sed tristique id, turpis. Lorem ipsum ac tempor nibh. Ut turpis. Duis non lacus.Donec mauris ac.</p>
-				<a href = "http://www.facebook.com"><img class = "like"src ="http://upload.wikimedia.org/wikipedia/commons/1/13/Facebook_like_thumb.png"/></a>
+				<a><img class = "like"src ="http://upload.wikimedia.org/wikipedia/commons/1/13/Facebook_like_thumb.png"/></a>
 			</div>
 			<div>
 				<img class = "owt" src = "http://swiat-naklejek.pl/688-3900-thickbox/szablon-malarski-zebra-d14.jpg" />
@@ -124,6 +123,11 @@
 			</div>
 				
 		</div>
-		
-	</body> 
-</html>   
+
+
+
+
+    <script src="jquery-1.11.1.js"></script>
+    <script src="skrypt.js"></script>
+  </body>
+</html>

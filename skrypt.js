@@ -1,3 +1,51 @@
+$(document).ready(function() {
+	
+	$("#wiadomosc").fadeOut();
+	
+	$(".txt a").click(function(){
+		//if (a == 0){
+		$(this).after('<p>Polubiłes ten post</p>');
+		//a=a+1;
+		//}
+	 });
+
+    $("#prawy").mouseenter(function(){
+        $("#prawy").fadeTo(10,1);
+    });
+    
+    $("#p4").click(function(){
+    $("#wiadomosc").fadeIn();
+    });
+    
+    $("#prawy").mouseleave(function(){
+        $("#prawy").fadeTo(10,0.7);
+    });
+    
+    $("#bwyslij").click(function(){
+    wyslij();
+    });
+   
+    $("#banuluj").click(function(){
+    $("#wiadomosc").fadeOut();
+    });
+    
+    $(".przycisk").mouseenter(function(){
+    $(this).fadeTo(10,1);
+    });
+    
+    $(".przycisk").mouseleave(function(){
+    $(this).fadeTo(10,0.8);
+    });
+    
+    odliczanie();
+    
+    //$('body').append('<h1>Im a paragraph</h1>');
+});
+
+
+//a=0;
+
+
 function odliczanie()
 		{
 			var dzisiaj = new Date();
@@ -14,45 +62,30 @@ function odliczanie()
 			document.getElementById("zegar").innerHTML = dzien+"/"+miesiac+"/"+rok+"  "+godzina+":"+minuta+":"+sekunda;
 			setTimeout("odliczanie()",1000);
 		}	
-		
+
+	
 function wyslij()
 	{
-		a = document.getElementById('iimie').value
-		b = document.getElementById('inazwisko').value
-		c = document.getElementById('iemail').value
-		d = document.getElementById('iwiadomosc').value 
+		a = document.getElementById('iimie').value;
+		b = document.getElementById('inazwisko').value;
+		c = document.getElementById('iemail').value;
+		d = document.getElementById('iwiadomosc').value;
 		
-		indeks1 = c.indexOf("@")
-		indeks2 = c.indexOf(".")
+		indeks1 = c.indexOf("@");
+		indeks2 = c.indexOf(".");
 		
 		if (a=="" || b=="" || c=="" ||d == "")
 		{
-			alert("Brak danych")
+			alert("Brak danych");
 		}
 				
 				else if (indeks1<0 || indeks2<0 || indeks1>indeks2)
 				{
-				alert("Zły mail")
+				alert("Zły mail");
 				}
 				
 				else
 				{
-					alert("OK")
+					alert("Wysłano :)");
 				}
 		}
-
-function wstawiaj()
-{
-var element = document.createElement('div'); //tworzymy nowego Diva
-element.id = 'bloczek';
- 
-var body = document.getElementsByTagName('body')[0]; //pobieramy body
-var wiadomosc = document.getElementById('wiadomosc');
-body.insertBefore(element,wiadomosc);
-
-}
-
-function wstawiaj2()
-{
-
-}
