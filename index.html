@@ -20,7 +20,7 @@
 	
 		<div id = "pasek">
 			<div class = "przycisk" id="p1">
-				<div><a class = "ptekst" href = "http://www.up.wroc.pl/">Hic ambiguo</a></div>
+				<div><a class = "ptekst">Hic ambiguo</a></div>
 				<div><img class = "pikona" src = "obrazki/house28.png"></div>
 			</div>
 			<div class = "przycisk" id = "p2">
@@ -78,31 +78,38 @@
 		</div>
 	
 	
-		<div class = "tresc">
-		<div>
-		<table>
-	    	<thead><th colspan="6"><h2>Posse melius vim et, his ut albucius</h2></th></thead>
-	    	<tbody>
-	       		<tr>
-	        	<td><img src = "http://www.imageboard.pl/sites/default/files/images/ciastko.thumbnail.jpg" /></a></td>
-	        	<td><img src = "http://grafika.redakcja.pl/Gift.obiekt2.aspx/400/0/Gift/c021e63b-5df6-42b3-9817-f5a13d3fa9e4_20090306022523_Zabawne-urodziny-zyczenia.png" /></a></td>
-	        	<td><img src = "http://www.fashioner.pl/wp-content/uploads/2011/06/makaroniki.jpg" /></a></td>
-        		<td><img src = "http://www.imageboard.pl/sites/default/files/images/ciastko.thumbnail.jpg" /></a></td>
-	        	<td><img src = "http://grafika.redakcja.pl/Gift.obiekt2.aspx/400/0/Gift/c021e63b-5df6-42b3-9817-f5a13d3fa9e4_20090306022523_Zabawne-urodziny-zyczenia.png" /></a></td>
-	        	<td><img src = "http://www.fashioner.pl/wp-content/uploads/2011/06/makaroniki.jpg" /></a></td>
-	        	</tr>
-        		<tr>
-	        	<td><img src = "http://www.imageboard.pl/sites/default/files/images/ciastko.thumbnail.jpg" /></a></td>
-	        	<td><img src = "http://grafika.redakcja.pl/Gift.obiekt2.aspx/400/0/Gift/c021e63b-5df6-42b3-9817-f5a13d3fa9e4_20090306022523_Zabawne-urodziny-zyczenia.png" /></a></td>
-	        	<td><img src = "http://www.fashioner.pl/wp-content/uploads/2011/06/makaroniki.jpg" /></a></td>
-	       		<td><img src = "http://www.imageboard.pl/sites/default/files/images/ciastko.thumbnail.jpg" /></a></td>
-	        	<td><img src = "http://grafika.redakcja.pl/Gift.obiekt2.aspx/400/0/Gift/c021e63b-5df6-42b3-9817-f5a13d3fa9e4_20090306022523_Zabawne-urodziny-zyczenia.png" /></a></td>
-	        	<td><img src = "http://www.fashioner.pl/wp-content/uploads/2011/06/makaroniki.jpg" /></a></td>
-        		</tr>
-    		</tbody>
-		</table>
+		<div class = "tresc" id="galeria">
+			
+			<div><h2>Galeria zdjęć</h2></div>
+			<div class="slider">
+  			  <input type="button" value="<" class="prev" />
+     
+  				  <div class="wrapper">
+     
+       					 <ul class="lista">
+        				    <li>
+               					 <div><img src="obrazki/jez.png" /></div>
+         					</li>
+            				<li>
+                				<div><img src="obrazki/jez.png" /></div>
+            				</li>
+            				<li>
+                				<div><img src="obrazki/jez.png" /></div>
+            				</li>
+            				<li>
+               				 <div><img src="obrazki/jez.png" /></div>
+            				</li>         
+    				</div>
+     
+   				 <input type="button" value=">" class="next" />
+			</div>
+			
+			<div id="opisg">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer.</div>
+		
+				
 		</div>
-		</div>
+
+
 
 		<div class="tresc" id = "stopka">
 			<div>
@@ -124,7 +131,8 @@
 				
 		</div>
 
-
+		<div id = "ukryty"></div>
+		
 
 
     <script src="jquery-1.11.1.js"></script>

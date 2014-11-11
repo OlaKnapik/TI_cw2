@@ -18,13 +18,14 @@ body {
 	height: 250px;
 	position relative;
 	float:left;
-	opacity: 0.7;
+	
 }
 
 
 #obraz {
 	height: 100%;
 	width: 100%;
+	border-radius: 1000px;
 }
 
 #tekst {
@@ -116,7 +117,7 @@ table {
 #stopka {
 	background-color:#68AADE;
 	height: 170px;
-	opacity: 0.6;
+	opacity: 0.5;
 }
 
 #rys {
@@ -169,7 +170,9 @@ span {
 #timie{
 }
 
-#iwiadomosc{height: 50px;}
+#iwiadomosc{
+	height: 50px;
+}
 
 #zegar {
 	margin: 20px;
@@ -187,3 +190,85 @@ span {
 	width: 30%;
 }
 
+.slider {
+        width:400px;
+        margin:70px;
+        overflow:hidden;
+        clear:both;
+        
+    }
+ 
+.slider .prev, .slider .next {
+        width:30px;
+        height:70px;
+        float:left;
+        background:none;
+        border-radius:10px;
+        font:16px;
+        color:#68AADE;
+        margin:2px;
+        border:1px solid #68AADE;
+    }
+ 
+
+.slider .wrapper {
+        width:237px;
+        height:295px;
+        position:relative;
+        overflow:hidden;
+        border:2px solid #68AADE;
+        float:left;
+        background:none;
+    }
+ 
+.slider .lista {
+        margin:0;
+        padding:0;
+        list-style-type:none;
+        clear:both;
+        overflow:hidden;
+        position:absolute;
+        width:6000px;
+    }
+ 
+.slider .lista li {
+        float:left;
+        width:230px;
+        min-height:100px;
+        background:none;
+        margin:2px 5px 4px 2px;
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+        border-radius:4px;
+    }
+ 
+ 
+.slider .lista li div {
+        font:10px Arial;
+        color:#eee;
+        padding:5px;
+    }
+    
+    
+ #ukryty{
+ 	height: 400px;
+ 	width:400px;
+ 	position: fixed;
+ 	margin:10%;
+ 	background-color: black;
+ 	visibility: hidden;
+ }
+
+#polubiles {
+	color: #68AADE;
+	font-weight: bold;
+}
+
+#galeria div {
+	position:relative;
+	float:left;
+}
+
+#opisg{
+	width:50%;
+}

@@ -2,25 +2,25 @@ $(document).ready(function() {
 	
 	$("#wiadomosc").fadeOut();
 	
+	
+$("#p1").click(function() {
+  $("#stopka").load("podstrona.html div");
+});
+	
+	
+	
 	$(".txt a").click(function(){
 		//if (a == 0){
-		$(this).after('<p>Polubiłes ten post</p>');
+		$(this).after('<p id = "polubiles">Polubiłes ten post</p>');
 		//a=a+1;
 		//}
 	 });
-
-    $("#prawy").mouseenter(function(){
-        $("#prawy").fadeTo(10,1);
-    });
     
     $("#p4").click(function(){
     $("#wiadomosc").fadeIn();
     });
     
-    $("#prawy").mouseleave(function(){
-        $("#prawy").fadeTo(10,0.7);
-    });
-    
+
     $("#bwyslij").click(function(){
     wyslij();
     });
@@ -40,6 +40,68 @@ $(document).ready(function() {
     odliczanie();
     
     //$('body').append('<h1>Im a paragraph</h1>');
+    
+    $("#stopka").mouseenter(function(){
+    $("#stopka").css ("opacity" ,"1");
+     });
+     
+    $("#stopka").mouseleave(function(){
+    $("#stopka").css ("opacity" ,"0.5");
+     });
+    
+ 
+    $("#obraz").mouseenter(function(){
+    $("#obraz").css ("border-radius" ,"3px");
+     });
+     
+    $("#obraz").mouseleave(function(){
+    $("#obraz").css ("border-radius" ,"1000px");
+     });
+    
+    
+    //do slidera:
+    var $sliders = $('.slider');
+ 
+    $sliders.each(function() {
+        var $current_slider = $(this);
+        var $lista = $('.lista', $current_slider);
+        var $li = $lista.children('li');
+ 
+        if ($li.length > 3) {
+            //wyliczamy odległość pojedynczego przesunięcia
+            var odleglosc = $li.eq(0).outerWidth() + parseInt($li.eq(0).css('margin-left')) + parseInt($li.eq(0).css('margin-right'));
+ 
+            //Maksymalne przesuniecie w lewo
+            var maxLeft = odleglosc * $li.length - 1 * odleglosc;
+ 
+            //Przesuniecia lewo/prawo
+            $('.next', $current_slider).click(function() {
+                if ($lista.position().left > -maxLeft) {
+                    $($lista).not(':animated').animate({
+                        'left' : '-='+odleglosc
+                    },500);
+                }
+            });
+ 
+            $('.prev', $current_slider).click(function() {
+                if ($lista.position().left<0) {
+                    $($lista).not(':animated').animate({
+                        'left' : '+='+odleglosc
+                    },500);
+                }
+            });
+ 
+        } else {
+ 
+            //wyłączmy działanie next i prev
+            $('.next, .prev', $current_slider).click(function() {
+                $(this).preventDefault();
+                return false;
+            });
+ 
+        }
+    });
+
 });
 
 
@@ -70,22 +132,33 @@ function wyslij()
 		b = document.getElementById('inazwisko').value;
 		c = document.getElementById('iemail').value;
 		d = document.getElementById('iwiadomosc').value;
+		//e = document.getElementById('iemail').type;
+		
 		
 		indeks1 = c.indexOf("@");
 		indeks2 = c.indexOf(".");
 		
-		if (a=="" || b=="" || c=="" ||d == "")
-		{
-			alert("Brak danych");
-		}
-				
-				else if (indeks1<0 || indeks2<0 || indeks1>indeks2)
-				{
-				alert("Zły mail");
-				}
-				
-				else
-				{
-					alert("Wysłano :)");
-				}
-		}
+		$("#timie").css ("background-color" ,"#FFFFD5");
+		$("#tnazwisko").css ("background-color" ,"#FFFFD5");
+		$("#temail").css ("background-color" ,"#FFFFD5");
+		$("#twiadomosc").css ("background-color" ,"#FFFFD5");
+		
+		
+		
+		if (a=="")
+			  {$("#timie").css ("background-color" ,"#FF928A");}
+		
+		else if (b=="")
+			  {$("#tnazwisko").css ("background-color" ,"#FF928A");}
+		
+		else if (c=="" || indeks1<0 || indeks2<0 || indeks1>indeks2)
+			  {$("#temail").css ("background-color" ,"#FF928A");}
+		
+		else if (d=="")
+			 {$("#twiadomosc").css ("background-color" ,"#FF928A");}
+			 
+		else {alert("Wysłano");}
+			  
+
+		
+	}
