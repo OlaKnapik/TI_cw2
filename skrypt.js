@@ -4,7 +4,7 @@ $(document).ready(function() {
 	
 	
 $("#p1").click(function() {
-  $("#stopka").load("podstrona.html div");
+  $("#stopka").load("podstrona.html");
 });
 	
 	
